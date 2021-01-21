@@ -1,0 +1,52 @@
+____________________________________________PARTE 3____________________________________________________________________
+
+# Componentes angular:
+	-html,css e typescript
+	
+# Attribute Directives: Altera aparência e o comportamento de um elemento, componente ou outra diretiva
+
+#Structural Directives: Alterar o layout adicionandoe removendo elementos da DOM.
+	- Mexe na dom, no html em sim. Nos elementos da página.
+
+#Property Binding : '[variable_name]' => Procura dentro do componente uma tributo com o mesmo nome dentro
+dos colchetes.
+
+#Event Binding: '()' => Liga um evento do html, a uma método dentro do componente.	
+
+#One Way Data Binding => A alteração vai de um local para o outro (Observer). Quando o componente muda,
+quem está observando é alterado.
+
+#To way data binding: Se mecher no html muda o componente, e se for no componente altera o HTML.
+	- '[(ngModel)]' => Sintaxa para two way data binding.
+
+#Angular Router: Igualzin no flutter.
+
+#angular Pipes : Faz a formatação de um dado. exemplo: '{{produto.vencimento | date}}. Date é um método.
+
+____________________________________________PARTE 2____________________________________________________________________
+
+#Framework ReactiveX : Focado no padrão de observer. O código só será chamado de forma reativa (orientado
+a eventos).
+	- Evento <= Subject (monitorador) => Observers (Códigos interessadas no evento.Devem se registrar no subject)
+		(detecta) 		(notifica)
+	- #callbacks : Função como parâmetro para outras funções. Conceito de javascript
+	- #promises : Evolução dos callbacks. Encademento de várias chamadas.
+	- #observables : Evolução dos callbacks: reusável, stream de dados, operadores(Funções dentro do framework).
+
+____________________________________________PARTE 3____________________________________________________________________
+
+#Services : Classes que têm como principal objetivo organizar e compartilhar métodos e dados entre componentes. Por exemplo,
+a comunicação com o backend. Bem parecido com o que uso no spring boot.
+
+#@Injectable (decorator) : Transforma service como elegivel a injeção de dependência.
+
+#Injeção de dependência: A classe recebe as dependêmcias a partir de uma fornte externa ao invés de instância por conta
+própria.Framework fica responsável por gerenciar as dependências.
+
+
+
+
+	
+
+		
+
