@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCreateComponent implements OnInit {
 
+  niceAttribute = "qualquer";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  doSomething(): void {
+    console.log("fazendo algo!")
   }
 
 }
