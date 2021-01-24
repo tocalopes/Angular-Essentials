@@ -5,6 +5,7 @@ import {HomeComponent} from './views/home/home.component';
 import {ProductCrudComponent} from './views/product-crud/product-crud.component';
 
 
+
 const routes: Routes = [
   {
     path : "",

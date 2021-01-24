@@ -1,19 +1,34 @@
 {
-    "products": [
-        {
-            "id" : 1,
-            "name" : "Caneta",
-            "price" : 5.75
-        },
-        {
-            "id" : 2,
-            "name" : "Notebook",
-            "price" : 6000.50
-        },
-        {
-            "id" : 3,
-            "name" : "Tv",
-            "price" : 2500.00
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta",
+      "price": 5.75
+    },
+    {
+      "id": 2,
+      "name": "Notebook",
+      "price": 6000.5
+    },
+    {
+      "id": 3,
+      "name": "Tv",
+      "price": 2500
+    },
+    {
+      "name": "teste",
+      "price": 100.99,
+      "id": 4
+    },
+    {
+      "name": "teste",
+      "price": 100.99,
+      "id": 5
+    },
+    {
+      "name": "teste",
+      "price": 100.99,
+      "id": 6
+    }
+  ]
 }
