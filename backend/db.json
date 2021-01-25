@@ -1,14 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta",
-      "price": "5.80"
-    },
-    {
       "id": 2,
       "name": "Notebook",
-      "price": 6000.5
+      "price": "6000.57"
     },
     {
       "id": 3,
@@ -24,21 +19,6 @@
       "name": "form",
       "price": "12",
       "id": 7
-    },
-    {
-      "name": "asdas",
-      "price": "asdas",
-      "id": 13
-    },
-    {
-      "name": "maconha",
-      "price": "15zão",
-      "id": 14
-    },
-    {
-      "name": "droga",
-      "price": "12,59",
-      "id": 15
     },
     {
       "name": "copo",

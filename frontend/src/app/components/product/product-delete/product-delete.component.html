@@ -1,1 +1,17 @@
-<p>product-delete works!</p>
+<mat-card>
+    <mat-card-title>Deseja excluir o produto: '{{product.name}}'?</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input placeholder="Id" disabled matInput value={{product.id}} name = 'name'>
+        </mat-form-field>
+        <mat-form-field>
+            <input placeholder="Nome" disabled matInput value={{product.name}} name = 'name'>
+        </mat-form-field>
+        <mat-form-field>
+            <input placeholder="Preço" disabled matInput value={{product.price}} name = 'price'>
+        </mat-form-field>
+    </form>
+
+<button mat-raised-button color="primary" (click) = 'deleteProduct()'>Sim</button>
+<button mat-raised-button  color = "white" (click) = 'cancel()'>Não</button>
+</mat-card>
