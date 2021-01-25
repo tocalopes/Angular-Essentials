@@ -6,6 +6,7 @@ import {ProductCrudComponent} from './views/product-crud/product-crud.component'
 
 
 
+
 const routes: Routes = [
   {
     path : "",

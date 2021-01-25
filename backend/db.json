@@ -34,6 +34,16 @@
       "name": "maconha",
       "price": "15zão",
       "id": 14
+    },
+    {
+      "name": "droga",
+      "price": "12,59",
+      "id": 15
+    },
+    {
+      "name": "copo",
+      "price": "12.56",
+      "id": 16
     }
   ]
 }
