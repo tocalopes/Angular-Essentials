@@ -24,6 +24,11 @@
       "name": "copo",
       "price": "12.56",
       "id": 16
+    },
+    {
+      "name": "Bolo",
+      "price": "51",
+      "id": 17
     }
   ]
 }
