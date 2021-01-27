@@ -7,3 +7,9 @@
 .home .subtitle {
     font-size: 1.1rem;
 }
+
+.home{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}

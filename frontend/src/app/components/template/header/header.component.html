@@ -7,10 +7,13 @@
     </span>
 
     <span class="title-group tiny-black">
-        <i class="material-icons">
-            home
-        </i>
-        Início
+        <a [routerLink]='routeUrl'>
+            <i class="material-icons">
+                {{icon}}
+            </i>
+            {{title}}
+        </a>
+        
     </span>
 
 

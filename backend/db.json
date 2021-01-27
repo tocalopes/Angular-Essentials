@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": 2,
-      "name": "Notebook",
-      "price": "6000.57"
-    },
-    {
       "id": 3,
       "name": "Tv",
       "price": 2500
@@ -26,8 +21,8 @@
       "id": 16
     },
     {
-      "name": "Bolo",
-      "price": "51",
+      "name": "Bolo de chocolate",
+      "price": "52",
       "id": 17
     }
   ]
