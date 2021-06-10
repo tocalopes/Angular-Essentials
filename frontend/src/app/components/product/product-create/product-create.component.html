@@ -5,7 +5,14 @@
             <input matInput placeholder="nome" [(ngModel)] = 'product.name' name = 'name'>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="preço" [(ngModel)] = 'product.price' name = 'price'>
+            <input type = "number" matInput placeholder="preço" [(ngModel)] = 'product.price' name = 'price'>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Selecione tipo da transação</mat-label>
+          <mat-select [(value)] = 'product.productType'>
+            <!--<mat-option *ngFor = 'let typer of types' value = 'type.value'>{{type.viewValue}} </mat-option>-->
+            <mat-option *ngFor = 'let type of types' [value] = "type.value">{{type.viewValue}}</mat-option>
+          </mat-select>
         </mat-form-field>
     </form>
 

@@ -1,6 +1,6 @@
+import { Product } from './../product.model';
 import { ProductService } from './../product.service';
-import { Component, OnInit } from '@angular/core';
-import { Product } from '../product.model';
+import { Component, OnInit, ɵConsole } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,21 +8,37 @@ import { Router } from '@angular/router';
   templateUrl: './product-read.component.html',
   styleUrls: ['./product-read.component.css']
 })
+
 export class ProductReadComponent implements OnInit {
 
   //injeção de dependência é feita na declaração no construtor
 
-  constructor(private service: ProductService, private router:Router) { }
-  products : Product[];
-  displayedColumns = ['id','name','price','action'];
+  products: Product[];
+  total: number;
+
+  constructor(private service: ProductService, private router: Router) {
+
+  }
+
+  displayedColumns = ['id', 'name', 'price', 'productType', 'action'];
 
   ngOnInit(): void {
     this.service.read().subscribe(products => {
       this.products = products;
-      console.log(products);
+      var result : number = 0;
+      
+      for(var p of this.products){
+        result = result + p.price;
+      }
+      console.log("testando 123 =>" + result)
+      this.total = result
+      console.log(products.map(product => product.price).reduce((acc,p) => acc + p));
     })
   }
 
+  typeString(typeId: number): string {
+    return this.service.producTypeToString(typeId);
+  }
 
 
 }

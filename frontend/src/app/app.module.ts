@@ -1,3 +1,4 @@
+import { BudgetService } from './components/budget/budget.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 
@@ -25,15 +26,16 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
-import { ProdutcReadTableComponent } from './components/product/produtc-read-table/produtc-read-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import {MatSelectModule} from '@angular/material/select'; 
 
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { BudgetReadComponent } from './components/budget/budget-read/budget-read.component';
 
 registerLocaleData(localePt);
 
@@ -50,9 +52,9 @@ registerLocaleData(localePt);
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProdutcReadTableComponent,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    BudgetReadComponent
   ],
 
   imports: [
@@ -71,14 +73,15 @@ registerLocaleData(localePt);
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSelectModule
   ],
 
   providers: [
     {
       provide: LOCALE_ID,
       useValue: 'pt-BR'
-    }
+    },
   ],
   bootstrap: [AppComponent]
 })

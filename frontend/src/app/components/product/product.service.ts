@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { EMPTY, Observable } from 'rxjs';
-import { Product } from './product.model';
+import { Product, ProductType } from './product.model';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 //pode ser injetada em outras classes
@@ -26,6 +26,23 @@ export class ProductService {
     })
   }
 
+  producTypeToString(type : ProductType) : string {
+    if(type == ProductType.UBER){
+      return 'UBER';
+    }
+    if(type == ProductType.FOOD){
+      return 'COMIDA';
+    }
+    if(type == ProductType.FIXED_BILLS){
+      return 'CONTAS FIXAS';
+    }
+    if(type == ProductType.SHOPPING){
+      return 'COMPRAS';
+    }
+    return '';
+  }
+
+  
   create(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product).pipe(
       map(obj => obj),catchError(e => this.erroHandler(e))
@@ -40,7 +57,7 @@ export class ProductService {
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseUrl).pipe(
       map(obj => obj),catchError(e => this.erroHandler(e))
-    );;
+    );
   }
 
   readById(id: string): Observable<Product> {

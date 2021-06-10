@@ -1,29 +1,27 @@
 {
   "products": [
     {
-      "id": 3,
-      "name": "Tv",
-      "price": 2500
+      "name": "notebook",
+      "price": 511.5,
+      "productType": 3,
+      "id": 1
+    },
+    {
+      "name": "asdas",
+      "price": 511.52,
+      "productType": 4,
+      "id": 2
     },
     {
       "name": "teste",
-      "price": 100.99,
-      "id": 4
-    },
+      "price": 850.56,
+      "productType": 3,
+      "id": 3
+    }
+  ],
+  "budgets" : [
     {
-      "name": "form",
-      "price": "12",
-      "id": 7
-    },
-    {
-      "name": "copo",
-      "price": "12.56",
-      "id": 16
-    },
-    {
-      "name": "Bolo de chocolate",
-      "price": "52",
-      "id": 17
+      "value" : 2500.0
     }
   ]
 }
